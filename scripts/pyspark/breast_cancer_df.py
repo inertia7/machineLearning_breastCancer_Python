@@ -10,7 +10,7 @@ from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 from pyspark.ml.classification import MultilayerPerceptronClassifier
 
 
-rdd = sc.textFile('data.txt').map(lambda lines: lines.split(" "))
+rdd = sc.textFile('data/data.txt').map(lambda lines: lines.split(" "))
 
 df = rdd.toDF()
 

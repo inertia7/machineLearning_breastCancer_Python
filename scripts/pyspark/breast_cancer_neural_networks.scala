@@ -9,7 +9,7 @@ import org.apache.spark.mllib.stat.{MultivariateStatisticalSummary, Statistics}
 
 // Read in file
 val data = spark.read.format("libsvm")
-  .load("/home/rxe/myProjects/dataScience/breastCancer/data.txt")
+  .load("data/data.txt")
 
 data.collect()
 
